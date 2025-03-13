@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceitos fundamentais do CSS.</title>
+    <style>
+        h1{
+            color: #0b1ba7;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+        p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            color: #0e0e0e;
+        }
+        h3{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #0b1ba7;
+            font-size: 24px;
+        }
+        h4{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+        }
+        img{
+            border: 1px solid #bebebe;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    
+    <img src="assets/Banner CSS.png"/>
+    
+    <hr>
+    <h1>Um pouco sobre CSS – Entenda o que é.</h1>
+    <center>
+    <p>Neste site iremos aprender sobre o que é CSS, sua importância, evoluções, conceito, responsividade e acessibilidade, <br>seletores, animações e por ultimo e não menos importante <b>melhores práticas para escrever um código CSS!</b></p>
+    </center>
+    <hr>
+    <br>
+        <h3>O que é CSS? E sua importância?</h3>
+        <p>CSS, ou Cascading Style Sheets é reconhecida como uma <b>linguagem de estilo</b>, ela é utilizada por desenvolvedores para dar aparência e efeitos <br> a páginas de sites e aplicativos construídas sobre uma linguagem de marcação, como o <b>HTML</b>. Com a linguagem, os programadores podem <b>definir e modificar</b> o layout usando: <br> Fontes tipográficas, tamanho e expressividade dos elementos, posição dos elementos na página, efeitos visuais de movimento, dentre outras possibilidades.</p>
+        <p>Sendo <b>fundamental</b> para o desenvolvimento web, o CSS garante o padrão da <b>identidade visual</b> de sua página ou aplicativo, tornando-os mais <u>atraentes</u>, <u>eficientes</u>, <u>acessível</u> e alinhados com a identidade visual da marca.</p>
+    <br>
+            <h3>Evolução do CSS:</h3>
+            <p>Inicialmente CSS era <b>limitado</b> utilizado apenas para formatação básica oferecendo um layout simples. <br> Ao longo dos anos e à medida em que as páginas web recebiam mais <b>complexidade</b> houve maiores demanda por designs mais ricos surgindo a necessidade de uma linguagem de estilo mais robusta. Assim veio a chegada do <u>CSS2</u>, incluindo posicionamento, controle aprimorado sobre layout e a introdução de tipos de mídia para diferentes dispositivos.</p>
+            <p>E outras versões onde resultaram em diversas melhorias como: maior estabilidade e compatibilidade com navegadores.<br> Atualmente <u>CSS3</u> proporciona animações, gradientes e layouts de caixa flexíveis e acreditasse no desenvolvimento futuro do <u>CSS4</u> poderá incluir <br> design responsivos, fontes variáveis e sistemas de grade aprimorados.</p>
+            <br>   
+                <h3>Principais conceitos e sua influência:</h3>
+                <h4>Os conceitos são definidos por:</h4>
+                <p> - Ser responsável pelo <b>visual do site</b>, permitindo a adição de estilos, cores, fontes e outros elementos visuais a uma página da web.</p>
+                <p> - <b>Dividir</b> o conteúdo (HTML) da apresentação visual, facilitando a manutenção e a personalização do design. </p>
+                <p> - Permitir a <b>criação</b> de diferentes layouts, incluindo tabelas, grids e ajustes de imagens.</p>
+                <p> - Garante um <b>padrão de formatação</b> em diferentes navegadores e melhora a responsividade do design, adaptando-o a diversos tamanhos de tela. </p>
+                <p> Esses conceitos influenciam diretamente na estilização de páginas web porque determinam como os elementos visuais são organizados,<br> apresentados e adaptados em diferentes dispositivos. Criando uma identidade visual ao site e uma <u>experiência mais agradável</u> para o usuário.</p>
+                <br>
+                    <h3>Responsividade e Acessibilidade:</h3>
+                    <p>A <b>responsividade</b> CSS é a capacidade de uma página web se adaptar ao tamanho do dispositivo em que é exibida, <br> garantindo uma experiência agradável tanto para usuários de desktop quanto para aqueles em tablets e smartphones.</p>
+                    <p>No caso de responsividade, o CSS oferece diversas técnicas e ferramentas para tornar uma página web responsiva,<br> como: <u>Media Queries</u>, que permite aplicar estilos diferentes com base no tamanho da tela, <u>Grid Layout</u> que cede com que crie layouts mais complexos,<br> permitindo o reposicionamento automático de elementos e entre outros. </p>
+                    <br>
+                    <p>Enquanto a <b>acessibilidade</b> CSS, é a possibilidade de um site disponibilizar <U>inclusão</U> aqueles que possuem deficiências visuais, motoras ou cognitiva,<br> possibilitando com que acessem o conteúdo confortavelmente. Proporcionando ao usuário uma navegação mais inclusiva e acessível.</p>
+                    <p>Basicamente o CSS disponibiliza com que você faça <u>ajustes</u> no seu site, por exemplo, ajustando contrastes de cores, permitindo fontes escaláveis, <br> destacando elementos navegáveis e reduzindo animações que podem dificultar a navegação.</p>
+                    <br>
+                        <h3>Seletores de classe, ID e elementos:</h3>
+                        <h4>Seletores de classe:</h4>
+                        <p>No caso de <b>seletores de classe,</b> no CSS são usados para aplicar estilos a um ou mais elementos HTML que queremos estilizar em nossa página web.<br> Entre tanto as classes permitem estilizar apenas os elementos que possuem um <u>determinado nome de classe,</u> oferecendo mais flexibilidade na personalização do layout. </p>
+                        <img src="assets/Seletor de classe.png"/>
+                        <p>Aqui, apenas os elementos com a classe "titulo" receberiam o estilo (Terá a cor azul com o fundo amarelo).</p>
+                        <br>
+                        <h4>Seletores de elementos:</h4>
+                        <p>Em CSS, os <b>seletores de elemento</b> são usados para estilizar todos os elementos de um tipo específico em uma página web.<br> Eles aplicam os estilos diretamente a todas as ocorrências da tag HTML escolhida.</p>
+                        <img src="assets/Seletor de elemento.png"/>
+                        <p>Nesse exemplo a estilização será aplicada em <u>todos</u> os elementos de parágrafo do documento (todos se tornarão vermelho), dificultando casos em que queremos estilizar apenas um elemento específico.</p>
+                        <br>
+                        <h4>Seletores de ID:</h4>
+                        <p><b>Seletores de ID</b> são utilizados, quando desejamos identificar um elemento específico no nosso documento, para sua representação no CSS atribuímos o “#”.<br> O seletor de ID estiliza apenas o elemento específico que tem aquele ID, garantindo que o estilo será aplicado de forma única e precisa.</p>
+                        <img src="assets/Seletor de ID.png"/>
+                        <p>Isso faria com que o texto "Exemplo" fosse exibido em vermelho.</p>
+                        <br>
+                            <h3>Animações em CSS:</h3>
+                            <p>Animações CSS são uma maneira eficaz de adicionar movimento e interatividade aos elementos de uma página web,<br> permitindo que as pessoas desenvolvedoras criem experiências mais <u>ricas e dinâmicas</u> para as pessoas usuárias.</p>
+                            <br>
+                                <h3>Melhores práticas para escrever um código CSS:</h3>
+                                <h4>Organização do Código:</h4>
+                                <p>Manter o código CSS bem-organizado é essencial para facilitar a manutenção e a leitura.<br> Separe os códigos, use vários arquivos CSS para diferentes partes do site, ordene as propriedades de forma consistente (por ordem alfabética ou por categorias).</p>
+                                <br>
+                                <h4>Responsividade:</h4>
+                                <p>Desenvolva seu CSS com foco em design responsivo, utilizando unidades relativas como porcentagens ou unidades de viewport, além de media queries.</p>
+                                <br>
+                                <h4>Use folhas de estilo separadas para projetos maiores:</h4>
+                                <p>Isto não se aplica a todos os sites, mas em casos em que há um site grande com necessidade de um monte de CSS específicos, usar múltiplas folhas de estilo é uma boa ideia.</p>
+                                <br>
+                                <h4>Evite a redundância:</h4>
+                                <p>Outra das melhores práticas do CSS a seguir é evitar a redundância, remova as repetições e seu código irá ler melhor e ter um melhor desempenho também.</p>
+                                <br>
+                                <h4>Combine elementos onde for possível:</h4>
+                                <p>Ao invés de listar elementos um por um, combine-os para economizar espaço e tempo.<br> Muitas vezes, os elementos dentro de uma única folha de estilo terão o mesmo estilo (ou similar).</p>
+</html>
